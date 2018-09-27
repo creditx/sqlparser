@@ -13,7 +13,7 @@ It applies the same LICENSE as vitessio/vitess.
 
 ```go
 import (
-    "github.com/xwb1989/sqlparser"
+    "github.com/creditx/sqlparser"
 )
 ```
 
