@@ -2458,6 +2458,22 @@ convert_type:
   {
     $$ = &ConvertType{Type: string($1)}
   }
+| INTEGER
+  {
+    $$ = &ConvertType{Type: string($1)}
+  }
+| REAL
+  {
+    $$ = &ConvertType{Type: string($1)}
+  }
+| TEXT
+  {
+    $$ = &ConvertType{Type: string($1)}
+  }
+| NUMERIC
+  {
+    $$ = &ConvertType{Type: string($1)}
+  }
 
 expression_opt:
   {
