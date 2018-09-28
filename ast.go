@@ -2808,7 +2808,7 @@ type ConvertExpr struct {
 
 // Format formats the node.
 func (node *ConvertExpr) Format(buf *TrackedBuffer) {
-	buf.Myprintf("convert(%v, %v)", node.Expr, node.Type)
+	buf.Myprintf("cast(%v as %v)", node.Expr, node.Type)
 }
 
 func (node *ConvertExpr) walkSubtree(visit Visit) error {
